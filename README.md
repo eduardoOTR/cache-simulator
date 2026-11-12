@@ -15,7 +15,7 @@ A Python-based cache simulator that models separate instruction and data L1 cach
 Run with the default cache configuration (64:4:1):
 
 ```bash
-python cache_sim.py example_inputfilename.txt
+python cache_sim.py inputfilename.txt
 ```
 
 Configure the L1 caches:
