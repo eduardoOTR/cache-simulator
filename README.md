@@ -1,5 +1,5 @@
 # Cache Simulator
-A Python-based cache simulator that models separate instruction and data L1 caches with a unified L2 cache. It reports cache accesses, hits, misses, miss types, and hit/miss ratios.
+A Python-based cache simulator that models separate instruction and data L1 caches with a unified L2 cache. It reports cache accesses, hits, misses, miss types, and hit/miss ratios. The simulator uses a Random replacement policy, in which cache blocks are selected randomly for removal when replacement is required.
 
 ## Features
 
