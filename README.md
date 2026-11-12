@@ -12,22 +12,22 @@ A Python-based cache simulator that models separate instruction and data L1 cach
 
 ## Usage
 
-Run with the default cache configuration:
+Run with the default cache configuration (64:4:1):
 
 ```bash
-python cache_sim.py example_input.txt
+python cache_sim.py example_inputfilename.txt
 ```
 
 Configure the L1 caches:
 
 ```bash
-python cache_sim.py 64:4:1 64:4:1 example_input.txt
+python cache_sim.py il1_params dl1_params inputfilename.txt
 ```
 
 Configure all cache levels:
 
 ```bash
-python cache_sim.py 64:4:1 64:4:1 128:8:2 example_input.txt
+python cache_sim.py il1_params dl1_params l2_params inputfilename.txt
 ```
 
 Cache parameters use the following format:
@@ -52,7 +52,7 @@ The input file must contain one 32-bit unsigned memory address per line, represe
 00000000000000000000000000001000
 ```
 
-Addresses below 512 MiB are treated as data accesses; all other addresses are treated as instruction accesses.
+Addresses below 512MB are treated as data accesses; all other addresses are treated as instruction accesses.
 
 The sample input is available in [`example_input.txt`](example_input.txt).
 
