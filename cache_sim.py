@@ -152,10 +152,10 @@ def parse_arguments():
         raise ValueError(
             "Invalid number of arguments.\n\n"
             "Expected formats:\n"
-            "python cache_simulator.py inputfilename.txt\n"
-            "python cache_simulator.py il1_params dl1_params inputfilename.txt\n"
-            "python cache_simulator.py il1_params dl1_params l2_params inputfilename.txt\n\n"
-            "OBS: Parameter example: 64:4:1"
+            "python cache_sim.py inputfilename.txt\n"
+            "python cache_sim.py il1_params dl1_params inputfilename.txt\n"
+            "python cache_sim.py il1_params dl1_params l2_params inputfilename.txt\n\n"
+            "OBS: Parameter example -> 64:4:1 (nsets:bsize:assoc)"
         )
     
     return il1_params, dl1_params, l2_params, input_file
